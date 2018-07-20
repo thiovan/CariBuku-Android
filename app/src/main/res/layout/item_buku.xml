@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="4dp"
+        app:contentPadding="4dp"
+        android:layout_marginTop="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_foto"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center_vertical"
+                app:civ_border_width="0dp"
+                app:civ_border_color="@color/darkBlue"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:background="@color/darkBlue"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Judul"
+                    android:drawableStart="@drawable/ic_assignment"
+                    android:drawableLeft="@drawable/ic_assignment"
+                    android:drawablePadding="4dp"
+                    style="@style/MyTextView"
+                    android:id="@+id/tv_judul"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pengarang"
+                    android:drawableStart="@drawable/ic_person"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:drawablePadding="4dp"
+                    style="@style/MyTextView"
+                    android:id="@+id/tv_pengarang"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tahun Terbit"
+                    android:drawableStart="@drawable/ic_date_range_black_24dp"
+                    android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                    android:drawablePadding="4dp"
+                    style="@style/MyTextView"
+                    android:id="@+id/tv_tahun"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ISBN"
+                    android:drawableStart="@drawable/ic_format_list_numbered"
+                    android:drawableLeft="@drawable/ic_format_list_numbered"
+                    android:drawablePadding="4dp"
+                    style="@style/MyTextView"
+                    android:id="@+id/tv_isbn"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
